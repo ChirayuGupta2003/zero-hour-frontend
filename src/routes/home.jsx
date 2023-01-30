@@ -1,8 +1,10 @@
 import styles from "../styles/home.module.css"
 import video from "../videos/loop1.mp4"
+
 import discord from "../imgs/discord.svg"
 import instagram from "../imgs/instagram.svg"
-// import "../Scripts/script.js"
+import "../Scripts/script.js"
+
 
 const Home = () => {
   return (
