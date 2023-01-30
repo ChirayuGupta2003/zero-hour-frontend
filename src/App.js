@@ -54,9 +54,9 @@ function App() {
               index
               exact
               element={
-                <PrivateRoute>
+                // <PrivateRoute>
                   <Home />
-                </PrivateRoute>
+                // </PrivateRoute>
               }
             />
             <Route path="login" exact element={<Login />} />
