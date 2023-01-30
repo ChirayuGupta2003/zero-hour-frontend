@@ -1,6 +1,5 @@
 import styles from "../styles/home.module.css"
 import video from "../videos/loop1.mp4"
-import { Helmet } from 'react-helmet'
 
 const Home = () => {
   return (
