@@ -1,12 +1,14 @@
 import styles from "../styles/home.module.css"
 import video from "../videos/loop1.mp4"
-import { Helmet } from 'react-helmet'
+import discord from "../imgs/discord.svg"
+import instagram from "../imgs/instagram.svg"
+// import "../Scripts/script.js"
 
 const Home = () => {
   return (
     <>
       <div id={styles["nav-and-intro"]}>
-        <video autoPlay loop muted  className={styles["back-video"]}>
+        <video autoPlay loop muted className={styles["back-video"]}>
           <source src={video} type="video/mp4" />
         </video>
         <div className={styles["nav"]}>
@@ -133,19 +135,19 @@ const Home = () => {
 
       <div className={styles["gallery"]}>
         <div className={styles["gallery-container"]}>
-          <img className={styles["gallery-item gallery-item-1"]}
+          <img className={`${styles["gallery-item"]} ${styles["gallery-item-1"]}`}
             src="https://images.unsplash.com/photo-1613208602577-50fd21015cca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
             data-index="1" />
-          <img className={styles["gallery-item gallery-item-2"]}
+          <img className={`${styles["gallery-item"]} ${styles["gallery-item-2"]}`}
             src="https://images.unsplash.com/photo-1674787433572-37ae9a76555a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1175&q=80"
             data-index="2" />
-          <img className={styles["gallery-item gallery-item-3"]}
+          <img className={`${styles["gallery-item"]} ${styles["gallery-item-3"]}`}
             src="https://images.unsplash.com/photo-1674787433572-37ae9a76555a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1175&q=80"
             data-index="3" />
-          <img className={styles["gallery-item gallery-item-4"]}
+          <img className={`${styles["gallery-item"]} ${styles["gallery-item-4"]}`}
             src="https://images.unsplash.com/photo-1674787433572-37ae9a76555a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1175&q=80"
             data-index="4" />
-          <img className={styles["gallery-item gallery-item-5"]}
+          <img className={`${styles["gallery-item"]} ${styles["gallery-item-5"]}`}
             src="https://images.unsplash.com/photo-1674787433572-37ae9a76555a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1175&q=80"
             data-index="5" />
         </div>
@@ -159,9 +161,9 @@ const Home = () => {
         <div className={styles["footer-container"]}>
           <div className={styles["item"]}>
             <a href="" target="_blank">
-              <img id={styles["insta"]} className={styles["img"]} src="../imgs/instagram.svg" /></a>
+              <img id={styles["insta"]} className={styles["img"]} src={instagram} /></a>
             <a href="" target="_blank">
-              <img id={styles["discord"]} className={styles["img"]} src="imgs/discord.svg" /></a>
+              <img id={styles["discord"]} className={styles["img"]} src={discord} /></a>
           </div>
           <div className={styles["item"]}>
             <p>&copy BackSlash. All rights reserved.</p>
@@ -175,9 +177,6 @@ const Home = () => {
           </div>
         </div>
       </footer>
-      <Helmet>
-        <script async='true' src="../Scripts/script.js"></script>
-      </Helmet>
     </>
   );
 };
