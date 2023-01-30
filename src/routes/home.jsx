@@ -77,7 +77,7 @@ const Home = () => {
         <div className={styles["eventInfo-box"]}>
           <div className={styles["eventInfo-img"]}>
           </div>
-          <div className={styles["eventInfo-details"]}>
+          {/* <div className={styles["eventInfo-details"]}>
             <h1 className={styles["eventHeading"]}>
               CRYPTIC HUNT
             </h1>
@@ -90,42 +90,42 @@ const Home = () => {
                 aperiam qui, non unde eos dolores sunt molestias voluptatibus possimus placeat.
               </p>
             </div>
+          </div> */}
+          <div className={styles["box"]}>
+            <span></span>
+            <div className={styles["content"]}>
+              <h2>Card One</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.</p>
+            </div>
           </div>
         </div>
 
         <div className={styles["eventInfo-box"]}>
-          <div className={styles["eventInfo-details"]}>
-            <h1 className={styles["eventHeading"]}>
-              CRYPTIC HUNT
-            </h1>
-            <div className={styles["eventCard"]}>
-              <div id={styles["crypticHunt"]} className={styles["eventInfo-gif"]}>
-
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nobis ullam accusantium libero,
-                aperiam qui, non unde eos dolores sunt molestias voluptatibus possimus placeat.
-              </p>
+          <div className={styles["box"]}>
+            <span></span>
+            <div className={styles["content"]}>
+              <h2>Card One</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.</p>
             </div>
           </div>
           <div className={styles["eventInfo-img"]}>
           </div>
         </div>
+
         <div className={styles["eventInfo-box"]}>
           <div className={styles["eventInfo-img"]}>
           </div>
-          <div className={styles["eventInfo-details"]}>
-            <h1 className={styles["eventHeading"]}>
-              CRYPTIC HUNT
-            </h1>
-            <div className={styles["eventCard"]}>
-              <div id={styles["crypticHunt"]} className={styles["eventInfo-gif"]}>
-
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nobis ullam accusantium libero,
-                aperiam qui, non unde eos dolores sunt molestias voluptatibus possimus placeat.
-              </p>
+          <div className={styles["box"]}>
+            <span></span>
+            <div className={styles["content"]}>
+              <h2>Card One</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                elit, sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua.</p>
             </div>
           </div>
         </div>
