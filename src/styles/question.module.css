@@ -43,6 +43,17 @@ body::before {
     border-radius: 3vw;
 }
 
+
+
+#textfield {
+    
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 #questionNumber {
     font-size: 2.5vw;
 }
