@@ -2,7 +2,6 @@ import styles from "../styles/home.module.css"
 import video from "../videos/loop1.mp4"
 import discord from "../imgs/discord.svg"
 import instagram from "../imgs/instagram.svg"
-// import "../Scripts/script.js"
 
 const Home = () => {
   return (
@@ -76,21 +75,8 @@ const Home = () => {
       <div id={styles["main-eventInfo-box"]}>
         <div className={styles["eventInfo-box"]}>
           <div className={styles["eventInfo-img"]}>
+            
           </div>
-          {/* <div className={styles["eventInfo-details"]}>
-            <h1 className={styles["eventHeading"]}>
-              CRYPTIC HUNT
-            </h1>
-            <div className={styles["eventCard"]}>
-              <div id={styles["crypticHunt"]} className={styles["eventInfo-gif"]}>
-
-              </div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nobis ullam accusantium libero,
-                aperiam qui, non unde eos dolores sunt molestias voluptatibus possimus placeat.
-              </p>
-            </div>
-          </div> */}
           <div className={styles["box"]}>
             <span></span>
             <div className={styles["content"]}>

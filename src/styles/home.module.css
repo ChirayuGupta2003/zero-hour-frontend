@@ -668,7 +668,7 @@ body {
 }
 
 .eventInfo-img {
-    background: url(../imgs/homeLogo.png);
+    /* background: url(../imgs/homeLogo.png); */
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
