@@ -1,15 +1,8 @@
 import styles from "../styles/home.module.css"
 import video from "../videos/loop1.mp4"
-import zeroHour from "../videos/Zero Hour.mp4"
 import discord from "../imgs/discord.svg"
 import instagram from "../imgs/instagram.svg"
-import gif1 from "../videos/1.gif";
-import gif2 from "../videos/2.gif";
-import gif3 from "../videos/3.gif";
-import gif4 from "../videos/4.gif";
-import gif5 from "../videos/5.gif";
 // import "../Scripts/script.js"
-
 
 const Home = () => {
   return (
@@ -56,15 +49,12 @@ const Home = () => {
         </div>
         <div id={styles["mainInfoDiv"]}>
           <div id={styles["leftInfoDiv"]}>
-            {/* <div id={styles["infoContainer1"]}>
+            <div id={styles["infoContainer1"]}>
               WELCOME TO THE
             </div>
             <div id={styles["infoContainer2"]}>
               NEW REALITY
-              <video autoPlay loop muted >
-                <source src={zeroHour} type="video/mp4" />
-              </video>
-            </div> */}
+            </div>
             <div id={styles["infoContainer3"]}>
               <div id={styles["verticalBar"]}>
               </div>
@@ -86,8 +76,21 @@ const Home = () => {
       <div id={styles["main-eventInfo-box"]}>
         <div className={styles["eventInfo-box"]}>
           <div className={styles["eventInfo-img"]}>
-            <img src={gif1} alt="" />
           </div>
+          {/* <div className={styles["eventInfo-details"]}>
+            <h1 className={styles["eventHeading"]}>
+              CRYPTIC HUNT
+            </h1>
+            <div className={styles["eventCard"]}>
+              <div id={styles["crypticHunt"]} className={styles["eventInfo-gif"]}>
+
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius nobis ullam accusantium libero,
+                aperiam qui, non unde eos dolores sunt molestias voluptatibus possimus placeat.
+              </p>
+            </div>
+          </div> */}
           <div className={styles["box"]}>
             <span></span>
             <div className={styles["content"]}>
@@ -110,13 +113,11 @@ const Home = () => {
             </div>
           </div>
           <div className={styles["eventInfo-img"]}>
-          <img src={gif2} alt="" />
           </div>
         </div>
 
         <div className={styles["eventInfo-box"]}>
           <div className={styles["eventInfo-img"]}>
-          <img src={gif3} alt="" />
           </div>
           <div className={styles["box"]}>
             <span></span>

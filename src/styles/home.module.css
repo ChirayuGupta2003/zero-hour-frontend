@@ -11,7 +11,6 @@ body {
     background-color: rgba(0, 0, 0);
     font-family: 'Figtree', sans-serif;
     color: white;
-    overflow-x: hidden;
 }
 
 .back-video {
@@ -69,6 +68,13 @@ body {
 .nav>.nav-btn {
     display: none;
 }
+
+/* .nav>.nav-links {
+    display: inline;
+    float: right;
+    font-size: 1.2em;
+    justify-self: flex-end;
+} */
 .nav-links {
     display: flex;
     justify-content: center;
@@ -373,8 +379,6 @@ body {
 
 #infoContainer1 {
     font-size: 3.2vw;
-    height: 20vw;
-    /* width: 20vw; */
 }
 
 #infoContainer2 {
@@ -664,20 +668,14 @@ body {
 }
 
 .eventInfo-img {
-    /* background: url(../videos/1.gif); */
+    background: url(../imgs/homeLogo.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 45vw;
-    height: 25vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 30vw;
+    height: 30vw;
 }
-.eventInfo-img img{
-    height: 100%;
-    width: 100%;
-}
+
 .eventInfo-details {
     width: 30vw;
     height: 30vw;
