@@ -398,3 +398,24 @@ button::after {
     }
    
   }
+
+
+
+  .parent3_2 {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  
+  #img3_2_1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    border: 1px solid #000000;
+  }
+  
+  #img3_2_2 {
+    position:absolute;
+    top: 0;
+    left: 0;
+  }

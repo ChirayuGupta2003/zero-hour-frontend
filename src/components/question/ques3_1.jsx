@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styles from "../../styles/question.module.css"
 import { TextField } from "@mui/material";
+import img3_1 from "../../imgs/img3_1.png"
 
 const Ques3_1 = () => {
     const [name, setName] = useState("");
@@ -18,11 +19,11 @@ const Ques3_1 = () => {
                       QUESTION 3_1
                   </h3>
               </div>
+              <div>
+                <img src={img3_1} />
+            </div>
               <div id={styles["question"]} className={styles["questionPadding"]}>
-                  Can a language ever go extinct...Well the dinosaurs did and so did the phoenix...Oh wait, did the
-                  pheonix ever exist. I bet the people who liked them were called Phoenician. If they existed, I guess
-                  they were just a puny number. Or punic number. What is the native name of tuareg? These questions dont
-                  make any sense. Wait, Is this just a big facade or does something add up?
+              The water is always deeper than what it reflects.
               </div>
           </div>
           <br />

@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import styles from "../../styles/question.module.css"
 import { TextField } from "@mui/material";
-import img1_1 from "../../imgs/img1_1.png"
+import img8_1 from "../../imgs/img8_1.png"
 
-const Ques1_1 = () => {
+const Ques8_1 = () => {
     const [name, setName] = useState("");
   return (
     <div className={styles["notFound"]}>
@@ -16,14 +16,22 @@ const Ques1_1 = () => {
         <div id={styles["questionBlock"]}>
             <div id={styles["questionNumber"]} className={styles["questionPadding"]}>
                 <h3>
-                    QUESTION 1_1
+                    QUESTION 8_1
                 </h3>
             </div>
-            <div>
-            <img src={img1_1} />
-            </div>
             <div id={styles["question"]} className={styles["questionPadding"]}>
-            ( 7+8 ) + 6 = ?
+                
+            X=<img src={img8_1} /><br />
+            Z=no. of -... --- -- -...<br />
+            A=1st 4 letters of X+Z/n<br />
+            A is a meaningful English word<br />
+            B=correct spelling of A<br />
+            C=reverse(B)<br />
+            D=last 4 letters of C<br />
+            D is a Meaningful English word<br />
+            Y=correct spelling of D<br />
+            Find the Y of event.
+
             </div>
         </div>
         <br />
@@ -45,4 +53,4 @@ const Ques1_1 = () => {
   )
 }
 
-export default Ques1_1
+export default Ques8_1

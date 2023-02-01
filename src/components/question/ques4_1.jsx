@@ -20,10 +20,7 @@ const Ques4_1 = () => {
                   </h3>
               </div>
               <div id={styles["question"]} className={styles["questionPadding"]}>
-                  Can a language ever go extinct...Well the dinosaurs did and so did the phoenix...Oh wait, did the
-                  pheonix ever exist. I bet the people who liked them were called Phoenician. If they existed, I guess
-                  they were just a puny number. Or punic number. What is the native name of tuareg? These questions dont
-                  make any sense. Wait, Is this just a big facade or does something add up?
+              The round grizzly bear is going to get honey from a beehive in street no. 110 on 31st of Feb. But poor bear forgets the code needed to access the beehive. He'll be hella grateful if you help him out.
               </div>
           </div>
           <br />

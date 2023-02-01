@@ -1,10 +1,17 @@
 import React, { useState } from 'react'
 import styles from "../../styles/question.module.css"
 import { TextField } from "@mui/material";
+import img5_1 from '../../imgs/img5_1.png';
+import blank from '../../imgs/blank.png'
+import redrec from '../../imgs/redrec.png'
 
 
 const Ques5_1 = () => {
     const [name, setName] = useState("");
+    let audio = new Audio("../../imgs/galaxy_brain_meme_song.mp3");
+    const start = () => {
+        audio.play()
+      }
     return (
       <div className={styles["notFound"]}>
           <nav id={styles["navbar"]}>
@@ -19,12 +26,13 @@ const Ques5_1 = () => {
                       QUESTION 5_1
                   </h3>
               </div>
-              <div id={styles["question"]} className={styles["questionPadding"]}>
-                  Can a language ever go extinct...Well the dinosaurs did and so did the phoenix...Oh wait, did the
-                  pheonix ever exist. I bet the people who liked them were called Phoenician. If they existed, I guess
-                  they were just a puny number. Or punic number. What is the native name of tuareg? These questions dont
-                  make any sense. Wait, Is this just a big facade or does something add up?
+              <div>
+                  <img src={img5_1} />
               </div>
+              <div>
+              <button onClick={start}>Play</button>
+      </div>
+              
           </div>
           <br />
           <TextField id={styles["textfield"]}

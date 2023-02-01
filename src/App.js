@@ -16,16 +16,24 @@ import { NotFound } from "./routes/404";
 import Ques1_1 from "./components/question/ques1_1.jsx"
 import Ques1_2 from "./components/question/ques1_2.jsx"
 import Ques1_3 from "./components/question/ques1_3.jsx"
+import Ques2_1 from "./components/question/ques2_1.jsx"
+import Ques2_2 from "./components/question/ques2_2.jsx"
 import Ques3_1 from "./components/question/ques3_1.jsx"
 import Ques3_2 from "./components/question/ques3_2.jsx"
 import Ques3_3 from "./components/question/ques3_3.jsx"
 import Ques4_1 from "./components/question/ques4_1.jsx"
 import Ques4_2 from "./components/question/ques4_2.jsx"
 import Ques5_1 from "./components/question/ques5_1.jsx"
+import Ques5_2 from "./components/question/ques5_2.jsx"
 import Ques6_1 from "./components/question/ques6_1.jsx"
 import Ques6_2 from "./components/question/ques6_2.jsx"
 import Ques7_1 from "./components/question/ques7_1.jsx"
 import Ques7_2 from "./components/question/ques7_2.jsx"
+import Ques7_3 from "./components/question/ques7_3.jsx"
+import Ques8_1 from "./components/question/ques8_1.jsx"
+import Ques8_2 from "./components/question/ques8_2.jsx"
+import Ques8_3 from "./components/question/ques8_3.jsx"
+
 
 
 // complete the paths for files above
@@ -80,16 +88,23 @@ function App() {
             <Route path="ques1_1" exact element={<Ques1_1 />} />
             <Route path="ques1_2" exact element={<Ques1_2 />} />
             <Route path="ques1_3" exact element={<Ques1_3 />} />
+            <Route path="ques2_1" exact element={<Ques2_1 />} />
+            <Route path="ques2_2" exact element={<Ques2_2 />} />
             <Route path="ques3_1" exact element={<Ques3_1 />} />
             <Route path="ques3_2" exact element={<Ques3_2 />} />
             <Route path="ques3_3" exact element={<Ques3_3 />} />
             <Route path="ques4_1" exact element={<Ques4_1 />} />
             <Route path="ques4_2" exact element={<Ques4_2 />} />
             <Route path="ques5_1" exact element={<Ques5_1 />} />
+            <Route path="ques5_2" exact element={<Ques5_2 />} />
             <Route path="ques6_1" exact element={<Ques6_1 />} />
             <Route path="ques6_2" exact element={<Ques6_2 />} />
             <Route path="ques7_1" exact element={<Ques7_1 />} />
             <Route path="ques7_2" exact element={<Ques7_2 />} />
+            <Route path="ques7_3" exact element={<Ques7_3 />} />
+            <Route path="ques8_1" exact element={<Ques8_1 />} />
+            <Route path="ques8_2" exact element={<Ques8_2 />} />
+            <Route path="ques8_3" exact element={<Ques8_3 />} />
             <Route
               path="question"
               exact
