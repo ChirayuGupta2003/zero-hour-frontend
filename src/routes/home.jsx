@@ -1,9 +1,28 @@
-import styles from "../styles/home.module.css"
-import video from "../videos/loop1.mp4"
-import discord from "../imgs/discord.svg"
-import instagram from "../imgs/instagram.svg"
+import React, { useRef } from 'react';
+import styles from "../styles/home.module.css";
+import video from "../videos/loop1.mp4";
+import discord from "../imgs/discord.svg";
+import instagram from "../imgs/instagram.svg";
+import img1 from "../imgs/decryption_derby.png";
+import img2 from "../imgs/treasureHunt.png";
+import img4 from "../imgs/Final.png";
+import "../fonts/MonumentExtended-Regular.otf";
 
-const Home = () => {
+
+
+
+
+function Home() {
+  const myRef = useRef(null);
+  const myRef1 = useRef(null);
+  const sponsorsScroll = () => {
+    myRef.current.scrollIntoView({ behavior: 'smooth' });
+
+  };
+  const eventScroll = () => {
+    myRef1.current.scrollIntoView({ behavior: 'smooth' });
+
+  };
   return (
     <>
       <div id={styles["nav-and-intro"]}>
@@ -29,19 +48,19 @@ const Home = () => {
           <div className={styles["nav-links"]}>
             <div className={styles["btns-container"]}>
               <div className={styles["btn"]}>
-                <a href="#">
-                  Home
-                </a>
+                <button href="#" onClick={eventScroll}>
+                  Events
+                </button>
               </div>
               <div className={styles["btn"]}>
-                <a href="#">
+                <button href="#" >
                   About Us
-                </a>
+                </button>
               </div>
               <div className={styles["btn"]}>
-                <a href="#">
-                  Sponsers
-                </a>
+                <button href="#" onClick={sponsorsScroll}>
+                  Sponsors
+                </button>
               </div>
             </div>
           </div>
@@ -49,10 +68,10 @@ const Home = () => {
         <div id={styles["mainInfoDiv"]}>
           <div id={styles["leftInfoDiv"]}>
             <div id={styles["infoContainer1"]}>
-              WELCOME TO THE
+              {/* WELCOME TO THE
             </div>
             <div id={styles["infoContainer2"]}>
-              NEW REALITY
+              NEW REALITY */}
             </div>
             <div id={styles["infoContainer3"]}>
               <div id={styles["verticalBar"]}>
@@ -72,18 +91,16 @@ const Home = () => {
 
       {/* <!-- event info section --> */}
 
-      <div id={styles["main-eventInfo-box"]}>
+      <div id={styles["main-eventInfo-box"]} ref={myRef1}>
         <div className={styles["eventInfo-box"]}>
           <div className={styles["eventInfo-img"]}>
-            
+            <img src={img1} alt="" />
           </div>
           <div className={styles["box"]}>
             <span></span>
             <div className={styles["content"]}>
-              <h2>Card One</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.</p>
+              <h2>Decryption Derby</h2>
+              <p>An overnight online treasure hunt with clues all over the internet, using ciphers, extracting metadata or just figuring out the pop culture reference.</p>
             </div>
           </div>
         </div>
@@ -92,13 +109,14 @@ const Home = () => {
           <div className={styles["box"]}>
             <span></span>
             <div className={styles["content"]}>
-              <h2>Card One</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.</p>
+              <h2>Trail of the Wrecked Will</h2>
+              <p>An extensive on-campus treasure hunt.
+                The teams would have to perform 10 varied tasks at different locations on the campus leading them to the O'Keefe.
+              </p>
             </div>
           </div>
           <div className={styles["eventInfo-img"]}>
+            <img src={img2} alt="" />
           </div>
         </div>
 
@@ -108,18 +126,29 @@ const Home = () => {
           <div className={styles["box"]}>
             <span></span>
             <div className={styles["content"]}>
-              <h2>Card One</h2>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.</p>
+              <h2>The secret study of O'Keefe</h2>
+              <p>A horror themed mystery room based around O’Keefe’s study. Participants will have to search for clues and hidden objects within the room. Only 6 out of all the teams would qualify for the final round.</p>
             </div>
+          </div>
+        </div>
+
+        <div className={styles["eventInfo-box"]}>
+          <div className={styles["box"]}>
+            <span></span>
+            <div className={styles["content"]}>
+              <h2>..............?</h2>
+              <p>To be reveled Soon</p>
+            </div>
+          </div>
+          <div className={styles["eventInfo-img"]}>
+            <img src={img4} alt="" />
           </div>
         </div>
       </div>
 
       {/* <!-- sponsor section --> */}
 
-      <div className={styles["gallery"]}>
+      <div className={styles["gallery"]} ref={myRef}>
         <div className={styles["gallery-container"]}>
           <img className={`${styles["gallery-item"]} ${styles["gallery-item-1"]}`}
             src="https://images.unsplash.com/photo-1613208602577-50fd21015cca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80"
